@@ -1,0 +1,79 @@
+users:
+  sdfds:
+    username: sdfds
+    articleIds:
+      - 1
+      - 2
+    commentIds:
+      - 1
+      - 2
+      - 3
+  asdasd:
+    username: asdasd
+    articleIds:
+      - 3
+      - 4
+    commentIds: []
+articles:
+  '1':
+    id: 1
+    title: sf
+    url: sfdfs
+    username: sdfds
+    commentIds:
+      - 1
+      - 2
+    upvotedBy: []
+    downvotedBy: []
+    comments: []
+  '2':
+    id: 2
+    title: sdfds
+    url: fdsfs
+    username: sdfds
+    commentIds:
+      - 3
+    upvotedBy: []
+    downvotedBy: []
+    comments:
+      - &ref_0
+        id: 3
+        body: dsfdf
+        articleId: 2
+        username: sdfds
+        upvotedBy: []
+        downvotedBy: []
+  '3':
+    id: 3
+    title: asd
+    url: asdas
+    username: asdasd
+    commentIds: []
+    upvotedBy: []
+    downvotedBy: []
+  '4':
+    id: 4
+    title: asd
+    url: asda
+    username: asdasd
+    commentIds: []
+    upvotedBy: []
+    downvotedBy: []
+comments:
+  '1':
+    id: 1
+    body: sdff
+    articleId: 1
+    username: sdfds
+    upvotedBy: []
+    downvotedBy: []
+  '2':
+    id: 2
+    body: sdfdsf
+    articleId: 1
+    username: sdfds
+    upvotedBy: []
+    downvotedBy: []
+  '3': *ref_0
+nextArticleId: 5
+nextCommentId: 4
